@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Assistant</title>
+    <link rel="favicon" href="assets/images/jwLogo.png" />
+    <link rel="stylesheet" href="/static/css/calendar.css">
+</head>
+<body>
+    <img id="exit-icon" src="/assets/images/exit.png" alt="exit page" onclick="returnHome()">
+    <div id="calendar" class=""></div>
+    <div id="event-info" class="event hide">
+        <img src="/assets/images/exit.png" alt="exit page" onclick="closeWindow()" id="close-window">
+        <div class="event-title">
+            <label for="event-title">Title</label>
+            <input type="text" name="event-title" id="event-title">
+        </div>
+        <div class="event-date">
+            <label for="event-date">Date</label>
+            <input type="text" name="event-date" id="event-date">
+        </div>
+        <div>
+            <label for="event-details">Details</label>
+            <input type="text" name="event-details" id="event-details">
+        </div>
+        <button onclick="submitEvent()" id="submit-event">Submit</button>
+    </div>
+
+</body>
+<script src="static/scripts/calendar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+</html>

@@ -1,0 +1,101 @@
+
+
+#calendar {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;   
+}
+.calendarTable{
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.calendarTable thead tr th {
+    background: #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+.calendarTable tr td {
+    text-align: center;
+    padding: 20px 0px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #dadada;
+}
+
+.calendarBtns {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.calendarBtns button {
+    padding: 6px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.calendarDiv {
+    display: none;
+}
+
+#calendarTable_1 {
+    display: block;
+}
+
+#exit-icon {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 5%;
+    height: 10%;
+}
+
+tr td {
+    cursor: pointer;   
+}
+
+.event {
+    position: absolute;
+    left: 32%;
+    top: 40%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* width: fit-content; */
+    /* max-width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 500px;
+    background: #F1F1F1;
+    color: black;
+    border-radius: 5px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px 2px #c21e17;
+}
+#event-title {
+    width: 200px;
+}
+#event-details {
+    height: 100px;
+    width: 200px;
+    white-space: pre-wrap;
+}
+
+.hide {
+    display: none;
+}
+
+#close-window {
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
